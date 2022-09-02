@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mais seletores</title>
+  <style>
+    article p{
+      padding: 12px;
+      border: 1px solid black;
+    }
+    #principal p.promocao{
+      padding: 12px;
+      border-bottom: #CCC 1px solid;
+      background-color: aliceblue; 
+    }
+    /* todos os ps que tenham a classe coordenadores, que sejam descendentes de um section que seja descendente de um article que seja descendente de um elemento de id igual a principal que seja descendente do body */
+    /* body #principal article section p.coordenadores{
+
+    } */
+    /* article > p {
+      color: green;
+    } */
+
+    /* main > #titulo > section div > article .rotulo.promocao #refri p {
+
+    } */
+
+    
+
+  </style>
+</head>
+<body>
+  <main id="principal">
+    <!-- h1#titulo{Portal de cursos} -->
+    <h1 id="titulo">Portal de cursos</h1>
+
+    <!-- p#descricao{Possuímos cursos nas mais diversas áreas} -->
+    <p id="descricao">Possuímos cursos nas mais diversas áreas</p>
+
+    <!-- p.promocao.nova -->
+    <p class="promocao nova">
+      Venha conversar conosco e conhecer nossas ofertas de 
+      <strong>bolsas de estudos</strong>.
+    </p>
+
+    <!-- p{Cursos:} -->
+    <p>Cursos:</p>
+    <!-- article>p.*3 -->
+    <article>
+      <p class="novo-curso">Medicina</p>
+      <p class="curso">Engenharia de Computação</p>
+      <p class="curso">Farmácia</p>
+      <section>
+        <!-- p.coordenadores{Coordenadores à disposição!} -->
+        <p class="coordenadores">Coordenadores à disposição!</p>
+      </section>
+    </article>
+
+    <!-- p#.final-pagina*2 -->
+    <p id="contato" class="final-pagina">
+      Entre em contato: 11223344
+    </p>
+    <p id="rodape" class="final-pagina">
+      Todos os direitos reservados
+    </p>
+
+
+  </main>
+</body>
+</html>
+
